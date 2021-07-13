@@ -1,0 +1,45 @@
+/* =================
+Google Fonts 
+====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* =================
+Base Styles 
+====================*/
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =================
+Header Styles 
+====================*/
+header{
+    height: 667px;
+    background: #2D25A0;
+}
+.header-content{
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-text h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #fff;
+}
+.watch-btn{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 25px;
+    background: #E02C6D;
+}
+.header-img img{
+    width: 556px;
+    height: 438px;
+}
