@@ -77,6 +77,11 @@ Players Area Styles
 .single-player{
     box-shadow: 0 0 40px #ddd;
     padding: 15px;
+    transition: .3s ease;
+}
+.single-player:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
+    cursor: pointer;
 }
 .player-info h3{
     font-size: 28px;
@@ -162,6 +167,11 @@ Trainer Area Styles
     height: 500px;
     box-shadow: 0 0 30px rgb(212, 210, 210);
     padding: 10px;
+    transition: .3s ease;
+}
+.coach img:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);
+    cursor: pointer;
 }
 /* =================
 Footer Area Styles 
@@ -198,7 +208,7 @@ Responsive Mobile Devices
 ============================*/
 @media only screen and (max-width:668px) {
     .header {
-        height: 700px;
+        height: 715px;
     }
     .header-text{
         text-align: center;
@@ -220,7 +230,10 @@ Responsive Mobile Devices
     .header-img, .highlight-img {
         width: 100%;
         height: auto;
-        margin-top: 50px;
+        margin-top: 80px;
+    }
+    .header-img{
+        margin-bottom: 100px;
     }
     .header-img img, .highlight-img img{
         width: 100%;
