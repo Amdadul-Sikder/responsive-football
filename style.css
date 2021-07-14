@@ -8,13 +8,14 @@ Base Styles
 ====================*/
 body{
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
 /* =================
 Header Styles 
 ====================*/
-header{
+.header{
     height: 667px;
     background: #2D25A0;
 }
@@ -192,9 +193,101 @@ footer{
 
 
 
-/* =================
-Responsive Styles 
-====================*/
-@media only screen(max-width:668px) {
+/* =========================
+Responsive Mobile Devices 
+============================*/
+@media only screen and (max-width:668px) {
+    .header {
+        height: 700px;
+    }
+    .header-text{
+        text-align: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .header-text h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+    .header-content, .highlight-content, .trainer-area {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     
+    .header-img, .highlight-img {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+    .header-img img, .highlight-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .players-area {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+        margin-top: 70px;
+    }
+    .player-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-area, .about-trainer {
+    padding: 0 15px;
+}
+    .gallery-area h1 {
+        margin-top: 50px;
+    }
+    .gallery-row-1 {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 5px;
+    }
+    .gallery-row-2 {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 5px;
+    }
+    .single-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .highlight-content{
+        margin-top: 60px;
+    }
+    .highlight-text {
+        margin-right: 0px;
+        padding: 15px;
+    }
+    .highlight-text h1, .about-trainer h1 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .trainer {
+        padding-right: 0;
+    }
+    .coach {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .coach img {
+        width: 90%;
+        height: auto;
+    }
+    .footer-logo img {
+        width:80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .social-icons i.fab {
+        font-size: 23px;
+    }
+    .copyright-text {
+        margin-bottom: 100px;
+    }
 }
