@@ -20,6 +20,7 @@ header{
 }
 .header-content, .highlight-content{
     width: 1160px;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -36,12 +37,24 @@ header{
     font-size: 16px;
     font-weight: 500;
     color: #fff;
-    padding: 10px 25px;
+    padding: 10px 35px;
     background: #E02C6D;
+    transition: .3s;
+}
+.watch-btn i.fas{
+    padding-left: 5px;
+}
+.watch-btn:hover{
+    background-color: #3DBAFD;
 }
 .header-img img, .highlight-img img{
     width: 556px;
     height: 438px;
+}
+.header-img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: .3s ease;
 }
 
 /* =================
@@ -52,12 +65,26 @@ Players Area Styles
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 70px;
 }
 .player-img img{
     width: 300px;
     height: 256px;
 }
+.single-player{
+    box-shadow: 0 0 40px #ddd;
+    padding: 15px;
+}
 
+/* =================
+Highlight Area Styles 
+====================*/
+
+.highlight-content{
+    margin-top: 165px;
+}
 /* =================
 Gallery Area Styles 
 ====================*/
